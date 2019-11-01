@@ -1,0 +1,23 @@
+[
+  {
+    "name": "testserver",
+    "image": "ubuntu:latest",
+    "cpu": 64,
+    "memory": 256,
+    "essential": true,
+    "volumesFrom": [],
+    "portMappings": [
+      {
+        "containerPort": 8080,
+        "protocol": "tcp",
+        "hostPort": 0
+      }
+    ],
+    "environment": [
+      {
+        "name": "SERVICE_NAME",
+        "value": "testserver"
+      }
+    ]
+  }
+]
