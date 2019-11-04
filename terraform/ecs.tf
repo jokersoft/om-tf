@@ -15,7 +15,7 @@ resource "aws_ecs_service" "service" {
 
   load_balancer {
     container_name   = "testserver"
-    container_port   = 8080
+    container_port   = 80
     target_group_arn = "${aws_lb_target_group.tg.arn}"
   }
 
