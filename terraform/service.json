@@ -8,9 +8,9 @@
     "volumesFrom": [],
     "portMappings": [
       {
-        "containerPort": 32769,
+        "containerPort": 80,
         "protocol": "tcp",
-        "hostPort": 0
+        "hostPort": 32769
       }
     ],
     "environment": [
