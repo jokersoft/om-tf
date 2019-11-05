@@ -1,16 +1,16 @@
 [
   {
     "name": "testserver",
-    "image": "ubuntu:latest",
+    "image": "nginxdemos/hello:latest",
     "cpu": 64,
     "memory": 256,
     "essential": true,
     "volumesFrom": [],
     "portMappings": [
       {
-        "containerPort": 8080,
+        "containerPort": 80,
         "protocol": "tcp",
-        "hostPort": 0
+        "hostPort": 32769
       }
     ],
     "environment": [
